@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+span{
+    background: url("paw1.jpeg");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 8s linear;
+}
+
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(820deg)
+    }
+    
+    
+}
